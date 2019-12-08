@@ -24,6 +24,8 @@
           duration: this.duration
         }
         this.$store.dispatch('addMovie', movie)
+        this.title = ''
+        this.duration = ''
         this.$router.push('/')
       }
     },
